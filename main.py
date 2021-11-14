@@ -2,7 +2,6 @@ from mee6_py_api.api import API
 import asyncio
 import time
 import requests
-from pprint import pprint
 import configparser
 config = configparser.RawConfigParser()
 config.read('config.txt')
