@@ -1,12 +1,17 @@
-guild_id = 893900489345888276 # Set this number to your guild ID.
-user_id = 764004498695520268 # Set this number to your user ID.
-url = "https://discord.com/api/webhooks/" # Discord webhook URL
-
 from mee6_py_api.api import API
 import asyncio
 import time
 import requests
 from pprint import pprint
+import configparser
+config = configparser.RawConfigParser()
+config.read('config.txt')
+
+settings = dict(config.items('CONFIG'))\
+
+guild_id = settings['guild_id']
+user_id = settings['user_id']
+url = settings['url']
 
 class TestClass: # I have a class here because that's what the example code had for the API and I'm too lazy to change it.
     def __init__(self):

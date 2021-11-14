@@ -1,0 +1,12 @@
+[CONFIG]   
+
+#Set this number to your server/guild ID. 
+guild_id = 12345678901234567
+
+#Set this number to your user ID
+user_id = 12345678901234567
+
+#Set this URL to a Discord Webhook. Server Settings > Integrations > Webhook
+url = "https://discord.com/api/webhooks/"
+
+#Refer here for help with IDs: https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID-
