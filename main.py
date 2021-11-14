@@ -1,6 +1,7 @@
 from mee6_py_api.api import API
 import asyncio
 import time
+import sys
 import requests
 import configparser
 config = configparser.RawConfigParser()
@@ -11,6 +12,11 @@ settings = dict(config.items('CONFIG'))\
 guild_id = settings['guild_id']
 user_id = settings['user_id']
 url = settings['url']
+
+# Check if user has at least change some of the config settings.
+if guild_id == "12345678901234567":
+    print("CHANGE SETTINGS IN CONFIG.TXT")
+    sys.exit()
 
 class TestClass: # I have a class here because that's what the example code had for the API and I'm too lazy to change it.
     def __init__(self):
