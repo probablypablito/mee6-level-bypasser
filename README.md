@@ -18,5 +18,5 @@ The "API" just grabs the top 100 people on the scoreboard and looks if your user
 6)  Server Settings > Integrations > Webhooks > New Webhooks
 7)  Change the name, profile picture, and channel to whatever you want
 8)  Copy the Webhook URL into the config
-9)  Run the program with the run button or `python main.py` if self-hosting.
+9)  Run the program with the run button or `python main.py` if self-hosting
 10) Done! To check if it works change `rank.txt` to 0. Long as you aren't in first, the program should ping you!   
